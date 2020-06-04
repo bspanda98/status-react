@@ -49,7 +49,7 @@ class EnterQRcodeEditBox(BaseEditBox):
 class AssetText(BaseText):
     def __init__(self, driver, asset):
         super(AssetText, self).__init__(driver)
-        self.locator = self.Locator.xpath_selector("//*[@text='%s']/preceding-sibling::*[1]" % asset)
+        self.locator = self.Locator.xpath_selector("//*[@text='%s']" % asset)
 
 
 class AssetFullNameInAssets(BaseText):
